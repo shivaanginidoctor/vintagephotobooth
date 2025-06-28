@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photobooth by shi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- START SCREEN -->
+    <div id="start-screen">
+      <div id="start-content">
+        <img src="photobooth.png" alt="photobooth" />
+        <button id="start-btn">start</button>
+      </div>
+  </div>
+
+
+    <!-- CAMERA VIEW -->
+    <div id="camera-view" class="hidden">
+      <h2>smile for the camera!</h2>
+      <video id="video" autoplay playsinline></video>
+      <div id="countdown"></div>
+    </div>
+
+    <!-- FILMSTRIP VIEW -->
+    <div id="filmstrip" class="hidden">
+      <div class="film-frame" id="film-frame">
+        <canvas id="photo1"></canvas>
+        <canvas id="photo2"></canvas>
+        <canvas id="photo3"></canvas>
+        <div class="date-decor">
+          <div id="date"></div>
+          <div class="decor">☆</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="flash"></div>
+    <button id="download-btn" class="hidden">download ♡︎</button>
+    <div class="vintage-overlay"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
